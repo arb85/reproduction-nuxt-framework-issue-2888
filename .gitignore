@@ -106,7 +106,6 @@ dist
 .tern-port
 
 # macOS
-DS_Store
+.DS_Store
 
 # CUSTOM
-pages/test
