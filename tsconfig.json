@@ -1,0 +1,14 @@
+{
+  // https://v3.nuxtjs.org/concepts/typescript
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "types": [
+      // https://pinia.vuejs.org/ssr/nuxt.html#typescript
+      "@pinia/nuxt",
+      // https://github.com/windicss/nuxt-windicss#typescript
+      "nuxt-windicss",
+      // https://github.com/antfu/unplugin-icons
+      "unplugin-icons/types/vue"
+    ]
+  }
+}

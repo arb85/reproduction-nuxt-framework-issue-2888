@@ -1,0 +1,31 @@
+.page-title {
+  @apply text-4xl uppercase font-black;
+}
+
+.icon {
+  @apply filter drop-shadow;
+}
+
+.link-underline {
+  @apply font-bold underline;
+}
+
+.card {
+  @apply relative w-full card-border;
+}
+
+.card-image {
+  @apply relative w-full p-0.5 card-border max-w-96;
+}
+
+.button-action {
+  @apply flex items-center
+    px-3 py-1 min-h-12 min-w-max
+    green-click rounded-full
+    uppercase font-bold text-lg font-displaylight
+    text-white text-shadow-sm;
+}
+
+.japanese-vertical {
+  writing-mode: vertical-lr;
+}

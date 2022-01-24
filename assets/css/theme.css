@@ -1,0 +1,83 @@
+:root {
+  --header-height: 2.5rem;
+}
+html {
+  background-color: #f0e7df;
+}
+body {
+  font-family: 'Noto-Sans';
+}
+button {
+  /* to remove double-tap zoom on mobile */
+  touch-action: manipulation;
+}
+
+#theme-header {
+  height: var(--header-height);
+  @apply fixed top-2 inset-x-3;
+}
+#basic-page {
+  @apply px-3 pb-9;
+  padding-top: calc(var(--header-height) + 1rem);
+  min-height: calc(100vh - 0.5rem - var(--header-height));
+}
+#theme-footer {
+}
+
+.layout-background {
+  background-image: url('assets/graphics/bkg-circles.svg'),
+    linear-gradient(to bottom right, #fdfcfb 0%, #e2d1c3 100%);
+  background-repeat: repeat, no-repeat;
+  background-size: 2rem, cover;
+  background-position: center, top left;
+  @apply bg-blend-soft-light;
+}
+@media (min-width: 768px) {
+  .layout-background {
+    background-size: 3rem, cover;
+  }
+}
+
+.bg-circles {
+  background-image: url('assets/graphics/bkg-circles.svg');
+  background-repeat: repeat;
+  background-size: 2rem;
+  background-position: center;
+}
+
+.bg-sea-waves {
+  background-image: url('assets/graphics/bkg-sea-waves-white.svg');
+  background-repeat: repeat;
+  background-size: 2rem;
+  background-position: center;
+}
+.bg-sea-waves-yellow-bkg {
+  background-image: url('assets/graphics/bkg-sea-waves-white.svg'),
+    linear-gradient(to bottom right, rgb(253, 230, 138), rgb(251, 191, 36));
+  background-repeat: repeat, no-repeat;
+  background-size: 6rem, cover;
+  background-position: center, top left;
+}
+.bg-sea-waves-blue-bkg {
+  background-image: url('assets/graphics/bkg-sea-waves-white.svg'),
+    linear-gradient(to bottom right, rgb(96, 165, 250), rgb(37, 99, 235));
+  background-repeat: repeat, no-repeat;
+  background-size: 6rem, cover;
+  background-position: center, top left;
+}
+
+.border-image-white {
+  background-image: url('assets/graphics/border-waves-white.svg');
+  background-repeat: repeat-x;
+  height: 10px;
+}
+.border-image-green {
+  background-image: url('assets/graphics/border-waves-green.svg');
+  background-repeat: repeat-x;
+  height: 10px;
+}
+.border-image-blue {
+  background-image: url('assets/graphics/border-waves-blue.svg');
+  background-repeat: repeat-x;
+  height: 10px;
+}

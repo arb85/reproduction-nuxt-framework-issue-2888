@@ -1,0 +1,22 @@
+/* .board-item-counter div > button, p, button */
+.board-item-counter {
+  @apply flex items-center
+  max-w-min
+  bg-white bg-opacity-80 rounded-full
+  border border-white border-opacity-50
+  shadow-inset shadow-md;
+}
+.board-item-counter button {
+  @apply flex items-center justify-center h-9 w-9
+  text-xl text-white;
+}
+.board-item-counter button:disabled {
+  @apply disabled-click rounded-full;
+}
+.board-item-counter button:enabled {
+  @apply yellow-click rounded-full;
+}
+.board-item-counter p {
+  @apply w-6
+  text-xl font-display text-center text-shadow-sm;
+}
